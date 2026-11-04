@@ -1,9 +1,9 @@
 class Vonbraun < Formula
   desc "vonBraun connector: remote review for Granada pages"
   homepage "https://github.com/daskinnyman/vonbraun-release"
-  url "https://github.com/daskinnyman/vonbraun-release/releases/download/v0.2.1/vonbraun-0.2.1.tgz"
-  version "0.2.1"
-  sha256 "b4876c979de43a223c887185ab4f2214352228b692c228c9e60a2c6daf18594f"
+  url "https://github.com/daskinnyman/vonbraun-release/releases/download/v0.2.2/vonbraun-0.2.2.tgz"
+  version "0.2.2"
+  sha256 "bc46b410d7a22bc8259ece76b83b3278a903df3cb0ed4a39b428ffed2811ea83"
 
   depends_on "node"
 
@@ -13,6 +13,6 @@ class Vonbraun < Formula
   end
 
   test do
-    assert_match "0.2.1", shell_output("#{bin}/vonbraun --version")
+    assert_match "0.2.2", shell_output("#{bin}/vonbraun --version")
   end
 end
